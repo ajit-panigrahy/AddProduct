@@ -1,0 +1,13 @@
+<!-- Product.hbm.xml -->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.example.Product" table="products">
+		<id name="id" column="product_id">
+			<generator class="identity" />
+		</id>
+		<property name="name" column="product_name" />
+		<property name="price" column="price" />
+	</class>
+</hibernate-mapping>

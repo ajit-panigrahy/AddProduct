@@ -1,0 +1,28 @@
+<hibernate-configuration>
+
+	<!-- Other configurations -->
+
+	<session-factory>
+		<!-- Database connection settings -->
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/HIBERNATEEX
+		</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">Aa@@11@@</property>
+
+		<!-- JDBC connection pool settings -->
+
+		<!-- Specify dialect -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="hibernate.show_sql">true</property>
+
+		<!-- Drop and re-create the database schema on startup -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<!-- Mention annotated class -->
+		<mapping class="product.entity.Product" />
+
+	</session-factory>
+</hibernate-configuration>
